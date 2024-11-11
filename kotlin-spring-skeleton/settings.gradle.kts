@@ -3,3 +3,8 @@ plugins {
 }
 rootProject.name = "kotlin-spring-skeleton"
 
+dependencyResolutionManagement {
+    versionCatalogs {
+        create("libs") { from(files("core.versions.toml")) }
+    }
+}

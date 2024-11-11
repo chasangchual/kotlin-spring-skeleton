@@ -1,0 +1,126 @@
+[versions]
+arrow = "1.2.4"
+apachePoi = "5.3.0"
+axon = "4.10.0"
+cucumber = "7.18.1"
+lombok = "1.18.30"
+mapstruct = "1.5.5.Final"
+mockito = "5.11.0"
+jackson = "2.17.2"
+junitJupiter = "5.10.3"
+junitPlatform = "1.10.3"
+kotlin = "1.9.24"
+slf4j = "2.0.13"
+springBoot = "3.3.2"
+springFramework = "6.3.1"
+testContainers = "1.19.8"
+
+[libraries]
+arrow-bom = { module = "io.arrow-kt:arrow-stack", version.ref = "arrow" }
+arrow-core = { module = "io.arrow-kt:arrow-core", version.ref = "arrow" }
+
+apache-commons-lang3 = { module = "org.apache.commons:commons-lang3", version = "3.14.0" } # spring boot managed
+apache-commons-text = { module = "org.apache.commons:commons-text", version = "1.12.0" }
+apache-pdfbox = { module = "org.apache.pdfbox:pdfbox", version = "2.0.32" }
+apache-poi-poi = { module = "org.apache.poi:poi", version.ref = "apachePoi" }
+apache-poi-ooxml = { module = "org.apache.poi:poi-ooxml", version.ref = "apachePoi" }
+
+awsspring-startersqs = { module = "io.awspring.cloud:spring-cloud-aws-starter-sqs", version = "3.0.2" }
+
+axon-spring-boot-starter = { module = "org.axonframework:axon-spring-boot-starter", version.ref = "axon" }
+axon-metrics = { module = "org.axonframework:axon-metrics", version.ref = "axon" }
+
+caffeine-caffeine = { module = "com.github.ben-manes.caffeine:caffeine", version = "3.1.8" }
+commons-io = { module = "commons-io:commons-io", version = "2.16.1" }
+
+cucumber-bom = { module = "io.cucumber:cucumber-bom", version.ref = "cucumber" }
+cucumber-java = { module = "io.cucumber:cucumber-java", version.ref = "cucumber" }
+cucumber-junit = { module = "io.cucumber:cucumber-junit", version.ref = "cucumber" }
+cucumber-junit-platform-engine = { module = "io.cucumber:cucumber-junit-platform-engine", version.ref = "cucumber" }
+cucumber-spring = { module = "io.cucumber:cucumber-spring", version.ref = "cucumber" }
+
+datadog-statsd = { module = "com.datadoghq:java-dogstatsd-client", version = "4.4.2" }
+datadog-trace-api = { module = "com.datadoghq:dd-trace-api", version = "1.38.0" }
+
+flyway-core = { module = "org.flywaydb:flyway-core", version = "10.10.0" } # spring boot managed
+flyway-postgresql = { module = "org.flywaydb:flyway-database-postgresql", version = "10.10.0" } # spring boot managed
+
+glassfish-jaxb-runtime = { module = "org.glassfish.jaxb:jaxb-runtime", version = "4.0.5" } # spring boot managed
+guava-guava = { module = "com.google.guava:guava", version = "33.2.1-jre" }
+
+hibernate-envers = { module = "org.hibernate:hibernate-envers", version = "6.5.2.Final" } # spring boot managed
+hibernate-types = { module = "io.hypersistence:hypersistence-utils-hibernate-63", version = "3.8.2" }
+hibernate-validator = { module = "org.hibernate:hibernate-validator", version = "8.0.1.Final" } # spring boot managed
+
+jackson-bom = { module = "com.fasterxml.jackson:jackson-bom", version.ref = "jackson" }
+jackson-annotations = { module = "com.fasterxml.jackson.core:jackson-annotations", version.ref = "jackson" }
+jackson-core = { module = "com.fasterxml.jackson.core:jackson-core", version.ref = "jackson" }
+jackson-dataformat-csv = { module = "com.fasterxml.jackson.dataformat:jackson-dataformat-csv", version.ref = "jackson" }
+jackson-databind = { module = "com.fasterxml.jackson.core:jackson-databind", version.ref = "jackson" }
+jackson-datatype-jsr310 = { module = "com.fasterxml.jackson.datatype:jackson-datatype-jsr310", version.ref = "jackson" }
+jackson-module-kotlin = { module = "com.fasterxml.jackson.module:jackson-module-kotlin", version.ref = "jackson" }
+jackson-module-jsonSchema = { module = "com.fasterxml.jackson.module:jackson-module-jsonSchema", version.ref = "jackson" }
+
+javafaker = { module = "com.github.javafaker:javafaker", version = "1.0.2" }
+jknack-handlebars = { module = "com.github.jknack:handlebars", version = "4.4.0" }
+
+junit-jupiter = { module = "org.junit.jupiter:junit-jupiter", version.ref = "junitJupiter" } # spring boot managed
+
+junit-platform-suite = { module = "org.junit.platform:junit-platform-suite", version.ref = "junitPlatform" } # spring boot managed
+
+kotlin-reflect = { module = "org.jetbrains.kotlin:kotlin-reflect", version.ref = "kotlin" }
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib-jdk8", version.ref = "kotlin" }
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+
+logback-logstash-encoder = { module = "net.logstash.logback:logstash-logback-encoder", version = "8.0" }
+lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
+mapstruct = { module = "org.mapstruct:mapstruct", version.ref = "mapstruct" }
+mapstruct-processor = { module = "org.mapstruct:mapstruct-processor", version.ref = "mapstruct" }
+mockito-core = { module = "org.mockito:mockito-core", version.ref = "mockito" }
+mockito-kotlin = { module = "org.mockito.kotlin:mockito-kotlin", version = "5.4.0" }
+mockk-mockk = { module = "io.mockk:mockk", version = "1.13.12" }
+modelmapper = { module = "org.modelmapper:modelmapper", version = "2.4.5" }
+ninjasquad-springmockk = { module = "com.ninja-squad:springmockk", version = "4.0.2" }
+opencsv = { module = "com.opencsv:opencsv", version = "5.9" }
+postgresql = { module = "org.postgresql:postgresql", version = "42.7.3" } # spring boot managed
+
+slf4j-api = { module = "org.slf4j:slf4j-api", version.ref = "slf4j" } # spring boot managed
+
+stripe = { module = "com.stripe:stripe-java", version = "26.6.0" }
+
+spring-boot-starter = { module = "org.springframework.boot:spring-boot-starter", version.ref = "springBoot" }
+spring-boot-cache = { module = "org.springframework.boot:spring-boot-starter-cache", version.ref = "springBoot" }
+spring-boot-configuration-processor = { module = "org.springframework.boot:spring-boot-configuration-processor", version.ref = "springBoot" }
+spring-boot-data-jpa = { module = "org.springframework.boot:spring-boot-starter-data-jpa", version.ref = "springBoot" }
+spring-boot-data-jdbc = { module = "org.springframework.boot:spring-boot-starter-data-jdbc", version.ref = "springBoot" }
+spring-boot-devtools = { module = "org.springframework.boot:spring-boot-devtools", version.ref = "springBoot" }
+spring-boot-jdbc = { module = "org.springframework.boot:spring-boot-starter-jdbc", version.ref = "springBoot" }
+spring-boot-oauth2 = { module = "org.springframework.boot:spring-boot-starter-oauth2-resource-server", version.ref = "springBoot" }
+spring-boot-security = { module = "org.springframework.boot:spring-boot-starter-security", version.ref = "springBoot" }
+spring-boot-test = { module = "org.springframework.boot:spring-boot-starter-test", version.ref = "springBoot" }
+spring-boot-validation = { module = "org.springframework.boot:spring-boot-starter-validation", version.ref = "springBoot" }
+spring-boot-web = { module = "org.springframework.boot:spring-boot-starter-web", version.ref = "springBoot" }
+spring-boot-webflux = { module = "org.springframework.boot:spring-boot-starter-webflux", version.ref = "springBoot" }
+
+spring-data-commons = { module = "org.springframework.data:spring-data-commons", version.ref = "springBoot" } # spring boot managed
+spring-security-test = { module = "org.springframework.security:spring-security-test", version.ref = "springFramework" } # spring boot managed
+
+springdoc-openapi = { module = "org.springdoc:springdoc-openapi-ui", version = "1.8.0" }
+
+testcontainers-bom = { module = "org.testcontainers:testcontainers-bom", version.ref = "testContainers" } # spring boot managed
+testcontainers-junit-jupiter = { module = "org.testcontainers:junit-jupiter", version.ref = "testContainers" }
+testcontainers-postgresql = { module = "org.testcontainers:postgresql", version.ref = "testContainers" }
+testcontainers-testcontainers = { module = "org.testcontainers:testcontainers", version.ref = "testContainers" }
+
+[bundles]
+cucumber = ["cucumber-java", "cucumber-junit", "cucumber-junit-platform-engine", "cucumber-spring"]
+jackson = ["jackson-annotations", "jackson-core", "jackson-databind", "jackson-datatype-jsr310"]
+
+[plugins]
+docker-compose = { id = "com.avast.gradle.docker-compose", version = "0.16.11" }
+spotless = { id = "com.diffplug.spotless", version = "6.25.0" }
+palantir-docker = { id = "com.palantir.docker", version = "0.36.0" }
+sonarqube = { id = "org.sonarqube", version = "5.1.0.4882" }
+spring-boot = { id = "org.springframework.boot", version.ref = "springBoot" }
+spring-dependency-management = { id = "io.spring.dependency-management", version = "1.1.6" }
+versions = { id = "com.github.ben-manes.versions", version = "0.51.0" }
